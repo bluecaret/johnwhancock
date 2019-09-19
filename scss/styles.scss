@@ -1,0 +1,23 @@
+@import '../node_modules/normalize-scss/sass/normalize/import-now';
+
+$lblue: #3EB3ED;
+$dblue: #3C5FF3;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;  /* 10px = 1rem */
+}
+
+body {
+  font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;  /* px fallback */
+  font-size: 1.6rem;  /* default font-size for document */
+  line-height: 1.5;
+  background: white;
+  background: linear-gradient(45deg, lblue 70%, lighten($dblue, 10%) 70%, lighten($lblue, 15%) 85%, lighten($dblue, 20%) 85%);
+}
