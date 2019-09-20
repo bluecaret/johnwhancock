@@ -1,7 +1,9 @@
 @import '../node_modules/normalize-scss/sass/normalize/import-now';
 
 $lblue: #3EB3ED;
+$lblue2: lighten($lblue, 10%);
 $dblue: #3C5FF3;
+$dblue2: darken($dblue, 10%);
 
 html,
 body {
@@ -19,5 +21,49 @@ body {
   font-size: 1.6rem;  /* default font-size for document */
   line-height: 1.5;
   background: white;
-  background: linear-gradient(45deg, lblue 70%, lighten($dblue, 10%) 70%, lighten($lblue, 15%) 85%, lighten($dblue, 20%) 85%);
+}
+
+header {
+  position: relative;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  width: 90%;
+  height: 70vh;
+  margin: -3.5vh auto 0;
+  align-items: flex-end;
+  background-color: $lblue;
+  background: linear-gradient(-20deg, $lblue2 0%, $lblue2 10%, $lblue 10%, $lblue 55%, $dblue 55%, $dblue 90%, $dblue2 90%, $dblue2 100%);
+  transform: rotate(1.5deg);
+  &::before {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    background-image: url('../assets/tags.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .12;
+  }
+  h1 {
+    grid-row: 1;
+    grid-column: 1;
+    position: relative;
+    z-index: +1;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 11vw;
+    font-weight: 300;
+    line-height: .53;
+    margin: 0 0 -2vw 2vw;
+    padding: 0;
+    color: white;
+    p {
+      font-size: 5vw;
+      font-weight: 700;
+      margin: 0 0 0 2vw;
+      color: $dblue;
+    }
+  }
 }
