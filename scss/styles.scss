@@ -126,6 +126,11 @@ h1 {
       padding: 0;
     }
   }
+  @media screen and (orientation:landscape) and (max-width: 899px) {
+    .title {
+      display: none;
+    }
+  }
 }
 
 .tagline {
@@ -303,6 +308,7 @@ h1 {
       }
     }
     @media screen and (max-width: 899px) {
+      margin: 8rem 0rem;
       grid-template-columns: 1fr;
       &,
       &:nth-child(even) {
