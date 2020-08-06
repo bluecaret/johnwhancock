@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="mcm-boxes.svg"
+   id="svg66"
+   version="1.1"
+   class="undefined"
+   viewBox="0 0 129.3 800"
+   height="800"
+   width="129">
+  <metadata
+     id="metadata72">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs70" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg66"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="23.050344"
+     inkscape:cx="41.720957"
+     inkscape:zoom="4.39"
+     showgrid="false"
+     id="namedview68"
+     inkscape:window-height="1377"
+     inkscape:window-width="2560"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <style
+     id="style2">
+  .a{
+    fill:#359C98;
+  }
+</style>
+  <rect
+     style="stroke-width:1.015"
+     y="-1.3602796"
+     id="rect4"
+     class="a"
+     height="46.360279"
+     width="5"
+     x="60.700001" />
+  <path
+     id="path6"
+     class="a"
+     d="M119.1 47c-14-10.1-95.2-1.6-110.8 5.3 -9.3 4.1-12.8 41.7 0 46s93.8 14.8 110.8 5.3C132.2 96.2 133.1 57.1 119.1 47zM106.1 98.1c-13.8 7.7-79.4-0.7-89.7-4.3 -10.4-3.5-7.6-33.9 0-37.3 12.6-5.6 78.4-12.4 89.7-4.3C117.4 60.4 116.7 92.1 106.1 98.1z" />
+  <circle
+     id="circle8"
+     class="a"
+     r="8.5"
+     cy="73.2"
+     cx="63.1" />
+  <path
+     id="path10"
+     class="a"
+     d="M100.8 123c-8.9-3-64.8-10.2-76.6-3.6 -9 5.1-9.6 32.1 0 39.1 9.6 7 65.8 1.1 76.6-3.6C107.3 152 109.7 126 100.8 123zM95.3 151.8c-8.7 3.8-54.2 8.6-62 2.9 -7.8-5.6-7.3-27.5 0-31.6 9.5-5.3 54.8 0.5 62 2.9S100.5 149.5 95.3 151.8z" />
+  <circle
+     id="circle12"
+     class="a"
+     r="8.5"
+     cy="139.2"
+     cx="63.1" />
+  <path
+     id="path14"
+     class="a"
+     d="M112.8 184.1c-13.1-9.4-89-1.5-103.6 4.9 -8.7 3.9-12 39 0 43 12 4.1 87.7 13.8 103.6 4.9C125 230.1 125.8 193.6 112.8 184.1zM100.6 231.9c-12.9 7.2-74.2-0.7-83.9-4 -9.7-3.3-7.1-31.7 0-34.9 11.8-5.2 73.3-11.6 83.9-4C111.2 196.7 110.5 226.3 100.6 231.9z" />
+  <circle
+     id="circle16"
+     class="a"
+     r="8.5"
+     cy="210.3"
+     cx="63.1" />
+  <path
+     id="path18"
+     class="a"
+     d="M119.1 263.9c-14-10.1-95.2-1.6-110.8 5.3 -9.3 4.1-12.8 41.7 0 46 12.8 4.3 93.8 14.8 110.8 5.3C132.2 313.1 133.1 274 119.1 263.9zM106.1 315c-13.8 7.7-79.4-0.7-89.7-4.3 -10.4-3.5-7.6-33.9 0-37.3 12.6-5.6 78.4-12.4 89.7-4.3C117.4 277.4 116.7 309.1 106.1 315z" />
+  <path
+     id="path20"
+     class="a"
+     d="M100.8 340c-8.9-3-64.8-10.2-76.6-3.6 -9 5.1-9.6 32.1 0 39.1 9.6 7 65.8 1.1 76.6-3.6C107.3 368.9 109.7 343 100.8 340zM95.3 368.8c-8.7 3.8-54.2 8.6-62 2.9 -7.8-5.6-7.3-27.5 0-31.6 9.5-5.3 54.8 0.5 62 2.9C102.5 345.5 100.5 366.5 95.3 368.8z" />
+  <path
+     id="path22"
+     class="a"
+     d="M112.8 401.1c-13.1-9.4-89-1.5-103.6 4.9 -8.7 3.9-12 39 0 43 12 4.1 87.7 13.8 103.6 4.9C125 447.1 125.8 410.5 112.8 401.1zM100.6 448.9c-12.9 7.2-74.2-0.7-83.9-4 -9.7-3.3-7.1-31.7 0-34.9 11.8-5.2 73.3-11.6 83.9-4C111.2 413.7 110.5 443.3 100.6 448.9z" />
+  <circle
+     id="circle24"
+     class="a"
+     r="8.5"
+     cy="290.2"
+     cx="63.1" />
+  <circle
+     id="circle26"
+     class="a"
+     r="8.5"
+     cy="356.2"
+     cx="63.1" />
+  <circle
+     id="circle28"
+     class="a"
+     r="8.5"
+     cy="427.2"
+     cx="63.1" />
+  <path
+     id="path30"
+     class="a"
+     d="M119.1 476.6c-14-10.1-95.2-1.6-110.8 5.3 -9.3 4.1-12.8 41.7 0 46s93.8 14.8 110.8 5.3C132.2 525.8 133.1 486.7 119.1 476.6zM106.1 527.7c-13.8 7.7-79.4-0.7-89.7-4.3 -10.4-3.5-7.6-33.9 0-37.3 12.6-5.6 78.4-12.4 89.7-4.3C117.4 490.1 116.7 521.8 106.1 527.7z" />
+  <circle
+     id="circle32"
+     class="a"
+     r="8.5"
+     cy="502.8"
+     cx="63.1" />
+  <path
+     id="path34"
+     class="a"
+     d="M100.8 559c-8.9-3-64.8-10.2-76.6-3.6 -9 5.1-9.6 32.1 0 39.1 9.6 7 65.8 1.1 76.6-3.6C107.3 588 109.7 562 100.8 559zM95.3 587.8c-8.7 3.8-54.2 8.6-62 2.9 -7.8-5.6-7.3-27.5 0-31.6 9.5-5.3 54.8 0.5 62 2.9S100.5 585.5 95.3 587.8z" />
+  <circle
+     id="circle36"
+     class="a"
+     r="8.5"
+     cy="575.2"
+     cx="63.1" />
+  <path
+     id="path38"
+     class="a"
+     d="M112.8 620.1c-13.1-9.4-89-1.5-103.6 4.9 -8.7 3.9-12 39 0 43 12 4.1 87.7 13.8 103.6 4.9C125 666.1 125.8 629.6 112.8 620.1zM100.6 667.9c-12.9 7.2-74.2-0.7-83.9-4 -9.7-3.3-7.1-31.7 0-34.9 11.8-5.2 73.3-11.6 83.9-4C111.2 632.7 110.5 662.3 100.6 667.9z" />
+  <circle
+     id="circle40"
+     class="a"
+     r="8.5"
+     cy="646.3"
+     cx="63.1" />
+  <path
+     id="path42"
+     class="a"
+     d="M119.1 699.9c-14-10.1-95.2-1.6-110.8 5.3 -9.3 4.1-12.8 41.7 0 46s93.8 14.8 110.8 5.3C132.2 749.1 133.1 710 119.1 699.9zM106.1 751c-13.8 7.7-79.4-0.7-89.7-4.3 -10.4-3.5-7.6-33.9 0-37.3 12.6-5.6 78.4-12.4 89.7-4.3C117.4 713.4 116.7 745.1 106.1 751z" />
+  <circle
+     id="circle44"
+     class="a"
+     r="8.5"
+     cy="726.2"
+     cx="63.1" />
+  <rect
+     id="rect46"
+     class="a"
+     height="17"
+     width="5"
+     y="103"
+     x="60.7" />
+  <rect
+     id="rect48"
+     class="a"
+     height="25"
+     width="5"
+     y="158"
+     x="60.7" />
+  <rect
+     id="rect50"
+     class="a"
+     height="25"
+     width="5"
+     y="237"
+     x="60.7" />
+  <rect
+     id="rect52"
+     class="a"
+     height="17"
+     width="5"
+     y="319"
+     x="60.7" />
+  <rect
+     id="rect54"
+     class="a"
+     height="25"
+     width="5"
+     y="375"
+     x="60.7" />
+  <rect
+     id="rect56"
+     class="a"
+     height="25"
+     width="5"
+     y="453"
+     x="60.7" />
+  <rect
+     id="rect58"
+     class="a"
+     height="25"
+     width="5"
+     y="531"
+     x="60.7" />
+  <rect
+     id="rect60"
+     class="a"
+     height="25"
+     width="5"
+     y="595"
+     x="60.7" />
+  <rect
+     id="rect62"
+     class="a"
+     height="25"
+     width="5"
+     y="674"
+     x="60.7" />
+  <rect
+     style="stroke-width:1.01511"
+     id="rect64"
+     class="a"
+     height="46.369923"
+     width="5"
+     y="755"
+     x="60.700001" />
+</svg>
