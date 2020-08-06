@@ -1,0 +1,143 @@
+header {
+  @extend %section;
+  min-height: 100vh;
+  background: $orange;
+  
+  h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: $yellow;
+    font-size: 7rem;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    color: $yellow;
+    &:first-of-type {
+      font-family: 'DM Serif Display', serif;
+      font-size: 14rem;
+      color: $gray;
+      font-style: italic;
+      line-height: 1.2;
+    }
+    &:last-of-type {
+      margin-top: 1rem;
+      font-size: 4rem;
+    }
+  }
+  .break {
+    display: block;
+    width: 100%;
+  }
+  .break2 {
+    display: none;
+  }
+
+  @media screen and (max-width: 1890px) {
+    h1 {
+      font-size: 6rem;
+    }
+    p {
+      &:first-of-type {
+        font-size: 10.4rem;
+      }
+      &:last-of-type {
+        font-size: 3rem;
+      }
+    }
+  }
+  @media screen and (max-width: 1439px) {
+    h1 {
+      font-size: 5rem;
+    }
+    p {
+      &:first-of-type {
+        font-size: 8rem;
+      }
+      &:last-of-type {
+        font-size: 3rem;
+      }
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    h1 {
+      font-size: 5rem;
+    }
+    p {
+      &:first-of-type {
+        font-size: 6.8rem;
+      }
+      &:last-of-type {
+        font-size: 2.2rem;
+      }
+    }
+    .break {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      &:first-of-type {
+        font-size: 6rem;
+      }
+      &:last-of-type {
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+  }
+
+  ul.links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    li {
+      margin-left: 0rem;
+      margin-right: 3rem;
+      flex: 0 0 auto;
+    }
+    &.cta {
+      li {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    nav {
+      margin-top: 2rem;
+    }
+    ul.links {
+      .btn {
+        font-size: 1.4rem;
+      }
+      .link {
+        font-size: 1.2rem;
+      }
+      li {
+        margin-right: 2rem;
+        &::before {
+          width: 1.6rem;
+          height: 1.6rem;
+        }
+      }
+      .btn {
+        padding: .5rem 1rem;
+      }
+    }
+  }
+}
+
