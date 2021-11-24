@@ -1,18 +1,18 @@
-%section {
-  width: 100%;
-  display: grid;
-  grid-template: 1fr / minmax(auto, 140rem);
-  align-items: center;
-  > article {
-    padding: 5vw 8rem;
-  }
-  @media screen and (max-width: 767px) {
-    > article {
-      padding: 5rem 3rem;
-    }
-  }
-}
+// %section {
+//   width: 100%;
+//   display: grid;
+//   grid-template: 1fr / minmax(auto, 140rem);
+//   align-items: center;
+//   > article {
+//     padding: 5vw 8rem;
+//   }
+//   @media screen and (max-width: 767px) {
+//     > article {
+//       padding: 5rem 3rem;
+//     }
+//   }
+// }
 
-section {
-  @extend %section;
-}
+// section {
+//   @extend %section;
+// }
