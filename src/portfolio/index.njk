@@ -1,0 +1,186 @@
+---
+layout: default
+title: My work
+htmlClass: html
+bodyClass: body
+---
+
+<h1 class="jH1">I've got the skills; here's where those skills were acquired</h1>
+
+<h2 class="jH2">Wait, let's see what those skills are first</h2>
+
+<ul class="jSkills">
+  <li>CSS</li>
+  <li>SASS</li>
+  <li>HTML</li>
+  <li>JavaScript</li>
+  <li>TypeScript</li>
+  <li>Angular</li>
+  <li>ReactJS</li>
+  <li>WCAG</li>
+</ul>
+
+<h2 class="jH2">Okay, now where the skills are from</h2>
+
+<article class="jPortfolio">
+  <header class="jPortfolioHeader">
+    <h3>Open source browser extension</h3>
+    <p>CaretTab: New Tab Page</p>
+  </header>
+  <div class="jPortfolioBody">
+    <p>A popular "new tab page" replacement for Google Chrome and FireFox fully designed and developed by me as a side project. Originally created to serve my own wants in a new tab page, CaretTab has evolved into a widely customizable and easy-to-use extension with approximately 40,000 weekly users and over 100 stars in GitHub. Originally developed with vanilla JavaScript, the current version has been completely rewritten using Angular.</p>
+    <ul class="jPortfolioLinks">
+      <li><a href="https://www.carettab.com" target="_blank">Live site</a></li>
+      <li><a href="https://github.com/bluecaret/carettab" target="_blank">GitHub</a></li>
+    </ul>
+    <ul class="jPortfolioSkills" aria-label="Skills used in project">
+      <li>{% devIconCss %}</li>
+      <li>{% devIconSass %}</li>
+      <li>{% devIconJavascript %}</li>
+      <li>{% devIconTypescript %}</li>
+      <li>{% devIconAngular %}</li>
+      <li>{% devIconAccessibility %}</li>
+    </ul>
+  </div>
+  <div class="jPortfolioScreenshot">
+    <img alt=".." src="/assets/images/portfolio/carettab.jpg" class="thumb" />
+  </div>
+</article>
+
+<article class="jPortfolio">
+  <header class="jPortfolioHeader">
+    <h3>Accessibility overhaul for lodging site</h3>
+    <p>Airbnb</p>
+  </header>
+  <div class="jPortfolioBody">
+    <p>As the Web Remediation Software Engineer I was assigned various accessibility violations that QA identified across the site and was tasked with fixing the violations. This ranged from simple changes to the heading structure all the way to a complete refactoring of a page to fix many issues. The accessibility fixes help bring Airbnb in compliance with WCAG 2.0 and make the website useable for a wider audiance.</p>
+    <ul class="jPortfolioLinks">
+      <li><a href="https://www.airbnb.com" target="_blank" aria-label="View the Airbnb website">Live site</a></li>
+    </ul>
+    <ul class="jPortfolioSkills" aria-label="Skills used in project">
+      <li>{% devIconCss %}</li>
+      <li>{% devIconJavascript %}</li>
+      <li>{% devIconTypescript %}</li>
+      <li>{% devIconReact %}</li>
+      <li>{% devIconAccessibility %}</li>
+    </ul>
+  </div>
+  <div class="jPortfolioScreenshot">
+    <img alt=".." src="/assets/images/portfolio/airbnb.jpg" class="thumb" />
+  </div>
+</article>
+
+<article class="jPortfolio">
+  <header class="jPortfolioHeader">
+    <h3>Web portal for video game services</h3>
+    <p>Microsoft Game Stack</p>
+  </header>
+  <div class="jPortfolioBody">
+    <p>As the portal for all of Microsoft's gaming developer services, Game Stack is a key website that is used by thousands of developers and studios to find the services they need to develop their games. Working closely with the Marketing and Design teams, I was the lead developer on the site, working alongside a junior developer at times. The site was built in GatsbyJS on top of ReactJS and integrated with SharePoint as a CMS the Marketing team could use to add additional content. One big feature I added was the ability to have motion in the site's header via both a video background and layers of CSS animations to create a unique look. In addition I maintained WCAG 2.0 compliance on the site to ensure useability for all.</p>
+    <ul class="jPortfolioLinks">
+      <li><a href="https://www.gamestack.com" target="_blank" aria-label="View the Game Stack website">Live site</a></li>
+    </ul>
+    <ul class="jPortfolioSkills" aria-label="Skills used in project">
+      <li>{% devIconCss %}</li>
+      <li>{% devIconSass %}</li>
+      <li>{% devIconJavascript %}</li>
+      <li>{% devIconReact %}</li>
+      <li>{% devIconGatsby %}</li>
+      <li>{% devIconAccessibility %}</li>
+    </ul>
+  </div>
+  <div class="jPortfolioScreenshot">
+    <img alt=".." src="/assets/images/portfolio/gamestack.jpg" class="thumb" />
+  </div>
+</article>
+
+<article class="jPortfolio">
+  <header class="jPortfolioHeader">
+    <h3>Landing page for online gaming services</h3>
+    <p>Microsoft Azure PlayFab</p>
+  </header>
+  <div class="jPortfolioBody">
+    <p>PlayFab is a marketing website for gaming services such as multiplayer and Xbox. I was tasked as the sole-developer to provide any updates to the site that marketing requested and to incorporate any UI changes from the design teams. This site was built using HugoJS and SASS CSS.</p>
+    <ul class="jPortfolioLinks">
+      <li><a href="https://www.playfab.com" target="_blank" aria-label="View the PlayFab website">Live site</a></li>
+    </ul>
+    <ul class="jPortfolioSkills" aria-label="Skills used in project">
+      <li>{% devIconCss %}</li>
+      <li>{% devIconSass %}</li>
+      <li>{% devIconJavascript %}</li>
+      <li>{% devIconAccessibility %}</li>
+    </ul>
+  </div>
+  <div class="jPortfolioScreenshot">
+    <img alt=".." src="/assets/images/portfolio/playfab.jpg" class="thumb" />
+  </div>
+</article>
+
+<article class="jPortfolio">
+  <header class="jPortfolioHeader">
+    <h3>Angular and CSS framework for internal web apps</h3>
+    <p>Department of Social and Health Services</p>
+  </header>
+  <div class="jPortfolioBody">
+    <p>I was tasked to create a CSS and Angular component framework published to a private NPM registry that internal apps can use to provide a consistent look and feel between apps. I was involved in both the creation and maintenance of the framework as well as the front-end developer in charge of deciding the UX/UI of each application with oversight of another UI designer. In addition to the framework a styleguide was created that details all the available elements and how to use them, complete with code samples. Special attention was given to accessibility by following WCAG standards.</p>
+    <ul class="jPortfolioSkills" aria-label="Skills used in project">
+      <li>{% devIconCss %}</li>
+      <li>{% devIconSass %}</li>
+      <li>{% devIconJavascript %}</li>
+      <li>{% devIconTypescript %}</li>
+      <li>{% devIconAngular %}</li>
+      <li>{% devIconAccessibility %}</li>
+    </ul>
+  </div>
+  <div class="jPortfolioScreenshot">
+    <img alt=".." src="/assets/images/portfolio/webui.jpg" class="thumb" />
+  </div>
+</article>
+
+<article class="jPortfolio">
+  <header class="jPortfolioHeader">
+    <h3>Website redesign and custom slideshow</h3>
+    <p>TODAY.com, NBCUniversal</p>
+  </header>
+  <div class="jPortfolioBody">
+    <p>As a UI designer at NBC, I helped design various elements for a redesign of the Today Show website. One area in particular that I was in charge of was the design and function of the slideshow component used on the site, ensuring a fully responsive slideshow that provides the best viewing experience for users. Also was tasked with creating the search UI, ensuring ease-of-use and mobile-first viewing. One trick to this project was ensuring a great experience for users as well as providing optimal advertisement opportunities. Designs were guided by established styleguides and requirements from Stakeholders.</p>
+    <ul class="jPortfolioLinks">
+      <li><a href="https://www.today.com" target="_blank" aria-label="View the Today.com website">Live site</a></li>
+    </ul>
+    <ul class="jPortfolioSkills" aria-label="Skills used in project">
+      <li>{% devIconCss %}</li>
+      <li>{% devIconSass %}</li>
+      <li>{% devIconJavascript %}</li>
+    </ul>
+  </div>
+  <div class="jPortfolioScreenshot">
+    <img alt=".." src="/assets/images/portfolio/today.jpg" class="thumb" />
+  </div>
+</article>
+
+<article class="jPortfolio">
+  <header class="jPortfolioHeader">
+    <h3>Email migration tool turned web app</h3>
+    <p>BitTitan MigrationWiz</p>
+  </header>
+  <div class="jPortfolioBody">
+    <p>What was once a web app that looked like a simple, yet confusing website was redesigned to be an accessible, easy-to-use, mobile friendly, modern web app. Taking some complex concepts, they were restructured to be approachable and understandable at a glance. The interface was carefully setup to be functional no matter the device you used whether that be a mobile phone or a 4k monitor.</p>
+    <ul class="jPortfolioLinks">
+      <li><a href="https://www.bittitan.com/" target="_blank" aria-label="View the BitTitan website">Live site</a></li>
+    </ul>
+    <ul class="jPortfolioSkills" aria-label="Skills used in project">
+      <li>{% devIconCss %}</li>
+      <li>{% devIconLess %}</li>
+      <li>{% devIconJavascript %}</li>
+      <li>{% devIconEmber %}</li>
+    </ul>
+  </div>
+  <div class="jPortfolioScreenshot">
+    <img alt=".." src="/assets/images/portfolio/migrationwiz.jpg" class="thumb" />
+  </div>
+</article>
+
+<script src="/assets/scripts/simple-lightbox.min.js"></script>
+<script>
+  new SimpleLightbox('#carettab-gallery a', { animationSpeed: 150 });
+</script>

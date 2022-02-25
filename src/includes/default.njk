@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="{{ htmlClass }}" lang="{{ site.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% if title %}{{ title }} &mdash; {{ site.title }}
+      {% else %}{{ site.title or site.name}}
+      {% endif %}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ description or site.description }}">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    {# Open graph related #}
+    <meta property="og:title" content="{{ title or site.title or site.name }}"/>
+    <meta property="og:type" content="{{ type or site.type }}"/>
+    <meta property="og:url" content="{{ url or site.url }}"/>
+    <meta property="og:image" content="{{ image or site.image }}"/>
+    <meta property="og:site_name" content="{{ name or site.name }}"/>
+    <meta property="og:description" content="{{ description or site.description }}"/>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    {% if css %}
+      {% for link in css %}
+        <link rel="stylesheet" href="{{link}}"/>
+      {% endfor %}
+    {% endif %}
+  </head>
+  <body class="{{ bodyClass }}">
+    <div class="jNavWrapper">
+      <nav class="jNav">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+        <a href="/" class="jLogoLink">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M422.045,243.974c-15.285,0.4-33.072,0.804-48.357,1.204
+            c1.344,50.544-11.629,88.799-39.175,110.522c-39.11,30.84-66.704,11.772-78.237-28.554c-0.4,0-3.663-13.692-4.063-13.692
+            c-5.87,28.648-20.467,101.735-51.88,104.104c-26.062-18.516-21.863-73.951-27.749-112.103c-1.208-14.876-2.412-29.736-3.619-44.605
+            c-0.804,0.808-1.608,1.608-2.412,2.407c-10.282,4.463-28.669,19.46-33.784,28.938c-2.416,14.861-4.827,29.729-7.242,44.598
+            c-14.385,52.836-53.024,159.402-113.41,160.33c-4.023-3.215-8.046-6.43-12.065-9.646c-1.144-33.496,17.208-60.77,31.369-84.38
+            c19.703-29.737,39.415-59.475,59.118-89.211c8.446-9.638,16.892-19.292,25.338-28.93c0.404-8.038,0.808-16.068,1.208-24.106
+            c10.761-67.568-7.259-140.643-28.958-183.233c-7.69-15.092-17.148-40.395-38.611-37.367C34.415,51.303,33.083,73.317,19.354,84.851
+            c-0.804-0.403-1.607-0.804-2.411-1.207C15.18,37.882,54.007-3.864,88.126,40.249c35.776,46.249,59.282,138.903,47.053,225.424
+            c10.813-6.99,19.455-14.045,34.992-16.876c-4.227-44.502-9.458-113.878,1.204-155.508c0.804-0.404,1.612-0.804,2.416-1.208
+            c7.226,0.152,3.523,1.128,7.494,3.615c-0.512,71.947-0.963,151.837,5.591,218.189c3.219,32.608,7.942,74.598,18.284,79.565
+            c0.404-0.8,0.804-1.608,1.208-2.416c16.668-17.868,29.353-103.2,39.814-109.702c2.815-0.8,5.631-1.6,8.446-2.399
+            c2.463,1.768,3.119,2.144,4.822,4.823c18.819,29.025,6.519,61.682,43.438,73.526c42.021-14.381,57.395-53.804,56.706-110.898
+            c-20.858,0.477-70.479,6.271-82.044-4.826c0.799-1.204,1.607-2.408,2.415-3.615c26.138-2.812,52.284-5.623,78.413-8.435
+            c-7.486-63.757-34.647-106.438-69.967-142.25c0-0.4,0-0.805,0-1.204c1.199-1.204-2.728-0.7-1.52-1.903
+            c47.309,21.295,71.639,79.585,85.596,142.942c14.876-1.204,33.256-2.411,48.141-3.615C412.99,149.951,405.84,76.405,398.202,2.878
+            c0.407,0,0.808,0,1.208,0c0.799,0,1.607,0,2.415,0c9.149,28.434,12.541,61.646,18.476,94.026
+            c5.223,42.186,9.454,84.384,14.685,126.574c37.048,3.527,75.998,17.52,62.153,65.101c-0.399,0-0.808,0-1.207,0
+            c-2.016-0.399-4.023-0.808-6.031-1.215c-2.312-32.521-17.324-44.622-53.508-43.391c2.752,38.407,7.526,118.973,25.754,142.247
+            c5.352-2.544,4.512-3.503,9.654-1.216c0,0.408,0,0.808,0,1.216c-2.008,2.407-4.023,4.814-6.039,7.23
+            c-2.814-0.4-9.117-0.8-11.933-1.208C433.05,381.374,423.196,279.222,422.045,243.974z M108.638,319.916
+            c-23.163,41.638-87.451,106.615-91.694,160.331c47.953-19.972,70.731-79.278,85.664-132.609
+            C104.783,339.863,110.649,327.818,108.638,319.916z"/>
+          </svg>
+        </a>
+        <ul>
+          <li>
+            <a href="/portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="/thingamajigs">Thingamajigs</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="jContentWrapper">
+      {{ content | safe }}
+    
+      <footer class="jFooter">
+        Let's chat, send me some mail at <a href="mailto:john0404@gmail.com" target="_blank" class="jLink">john0404@gmail.com</a> or hit me up on Twitter <a href="https://twitter.com/bluecaret" target="_blank" class="jLink">@BlueCaret</a>
+      </footer>
+    </div>
+
+    <script src="/assets/scripts/nav.js"></script>
+
+    {% if js %}
+      {% for link in js %}
+        <script src="{{link}}"/>
+      {% endfor %}
+    {% endif %}
+  </body>
+</html>
