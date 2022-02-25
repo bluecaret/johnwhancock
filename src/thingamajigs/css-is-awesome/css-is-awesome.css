@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+  font-family: "Montserrat", sans-serif;
+  background: white;
+  color: black;
+  padding: 5rem;
+}
+
+.i-like div, .i-love div {
+  position: absolute;
+  bottom: 0.1em;
+  left: 0.3em;
+  width: 100%;
+  font-size: 4.2em;
+  line-height: 1.2em;
+  z-index: 1;
+}
+
+.i-like {
+  position: relative;
+  border: 5px solid black;
+  width: 16em;
+  height: 16em;
+}
+
+.i-love {
+  position: relative;
+  top: 0;
+  width: 12em;
+  height: 12em;
+  margin: 0 4em;
+  transform: rotate(-45deg);
+  background-color: black;
+  color: white;
+}
+.i-love:before, .i-love:after {
+  content: "";
+  background-color: black;
+  border-radius: 50%;
+  height: 12em;
+  position: absolute;
+  width: 12em;
+}
+.i-love:before {
+  top: -6em;
+  left: 0;
+}
+.i-love:after {
+  left: 6em;
+  top: 0;
+}

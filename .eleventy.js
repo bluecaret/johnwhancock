@@ -13,7 +13,7 @@ module.exports = (config) => {
   config.addPassthroughCopy('src/assets/static');
   config.addPassthroughCopy('src/assets/images');
   config.addPassthroughCopy('src/assets/scripts');
-  config.addPassthroughCopy('src/fun/**/*.css');
+  config.addPassthroughCopy('src/thingamajigs/**/*.css');
 
   // Developer Language Icons from https://devicon.dev/
   config.addNunjucksShortcode('devIconReact', function () {
