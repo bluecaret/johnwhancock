@@ -1,14 +1,17 @@
 ---
 layout: default
 title: Thingamajigs
+pagination:
+  data: collections.thingamajigs
+  size: 10
+  reverse: true
+  addAllPagesToCollections: true
 ---
 
 <h1 class="title">Thingamajigs I've created for fun</h1>
 
-{% set postslist = collections.thingamajigs %}
-
 <section aria-label="List of thingamajigs" class="posts">
-  {%- for post in postslist | reverse -%}
+  {%- for post in pagination.items -%}
     <article class="post">
       <header>
         <h2 class="postTitle">
@@ -22,3 +25,20 @@ title: Thingamajigs
     </article>
   {%- endfor -%}
 </section>
+
+{% if pagination.href.previous or pagination.href.next %}
+  <nav class="pagination" aria-label="Page navigation for thingamajigs">
+    <ol>
+      {% if pagination.href.previous %}
+        <li>
+          <a class="link" href="{{ pagination.href.previous  }}">&larr; Previous page</a>
+        </li>
+      {% endif %}
+      {% if pagination.href.next %}
+        <li>
+          <a class="link" href="{{ pagination.href.next }}">Next page &rarr;</a>
+        </li>
+      {% endif %}
+    </ol>
+  </nav>
+{% endif %}
