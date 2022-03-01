@@ -2,11 +2,7 @@
 <html lang="{{ site.lang }}">
   <head>
     <meta charset="utf-8">
-    <title>
-      {% if title %}{{ title }} &mdash; {{ site.title }}
-      {% else %}{{ site.title or site.name}}
-      {% endif %}
-    </title>
+    <title>{% if title %}{{ title }} &mdash; {{ site.title }}{% else %}John W Hancock, Front-end Web Developer{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ description or site.description }}">
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -81,11 +77,5 @@
     </footer>
 
     <script src="/assets/scripts/nav.js"></script>
-
-    {% if js %}
-      {% for link in js %}
-        <script src="{{link}}"/>
-      {% endfor %}
-    {% endif %}
   </body>
 </html>
