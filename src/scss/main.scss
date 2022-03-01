@@ -27,6 +27,36 @@ body {
   color: var(--vanilla);
 }
 
+:target:before {
+  content: "";
+  display: block;
+  height: 80px;
+  margin: -80px 0 0;
+}
+
+.skipLink {
+  position: absolute;
+  left: -999px;
+  width:1px;
+  height: 1px;
+  top: auto;
+  &:focus {
+    width: auto;
+    height: auto;   
+    font-family: var(--bodyFont);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2;
+    padding: 0 2rem;
+    color: var(--vanilla);
+    background-color: black;
+    display: block;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+}
+
 %textGradient {
   color: var(--daySky);
   @supports (background-clip: text) or (-webkit-background-clip: text) {
@@ -307,23 +337,28 @@ body {
   box-shadow: 0 0 10px 3px rgb(0 0 0 / 75%);
 }
 
-.contentWrapper {
+.main,
+.footer {
   width: var(--siteWidth);
   margin: 0 auto;
 }
 
 .footer {
-  margin: 8rem 0;
-  max-width: 48rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
   font-family: var(--headingFont);
   font-size: 3rem;
   font-weight: 400;
+  > div {
+    max-width: 48rem;
+  }
   a {
     color: inherit;
     font-size: 3rem;
   }
   @media screen and (max-width: 700px) {
     font-size: 2rem;
+    line-height: 1.7;
     a {
       font-size: 2rem;
     }

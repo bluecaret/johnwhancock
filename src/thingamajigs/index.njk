@@ -19,9 +19,9 @@ pagination:
         </h2>
         <p class="postDescription">{{ post.data.description }}</p>
       </header>
-      <main class="postContent">
+      <div class="postContent">
         {{ post.templateContent | safe}}
-        </main>
+      </div>
     </article>
   {%- endfor -%}
 </section>

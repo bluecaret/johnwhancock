@@ -17,8 +17,7 @@
   "license": "unlicensed",
   "homepage": "https://bluecaret.github.io/johnwhancock",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "simplelightbox": "^2.10.2"
+    "@11ty/eleventy": "^1.0.0"
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",

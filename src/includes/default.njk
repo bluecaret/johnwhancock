@@ -22,13 +22,15 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
+    <a href="#main-content" class="skipLink">Skip to content</a>
+
     <div class="navWrapper">
       <nav class="nav">
         <?xml version="1.0" encoding="utf-8"?>
         <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-        <a href="/" class="jLogoLink">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <a href="/" class="jLogoLink" aria-label="Go to homepage of John W Hancock">
+          <svg alt="Logo for John W Hancock depicts his initials, J.W.H." version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M422.045,243.974c-15.285,0.4-33.072,0.804-48.357,1.204
             c1.344,50.544-11.629,88.799-39.175,110.522c-39.11,30.84-66.704,11.772-78.237-28.554c-0.4,0-3.663-13.692-4.063-13.692
@@ -65,15 +67,18 @@
       </nav>
     </div>
 
-    <div class="contentWrapper">
+
+    <main id="main-content" class="main">
       {{ content | safe }}
-    
-      <footer class="footer">
+    </main>
+
+    <footer class="footer">
+      <div>
         Let's chat, send me some mail at <a href="mailto:john0404@gmail.com" target="_blank" class="link">john0404@gmail.com</a>. You can also hit me up on Twitter <a href="https://twitter.com/bluecaret" target="_blank" class="link">@BlueCaret</a> or connect with me on <a href="https://www.linkedin.com/in/johnwhancock/" target="_blank" class="link">LinkedIn</a>.
         <br /><br />
         Check out some of my work over on <a href="https://github.com/bluecaret" target="_blank" class="link">GitHub</a> or <a href="https://codepen.io/BlueCaret/" target="_blank" class="link">CodePen</a>.
-      </footer>
-    </div>
+      </div>
+    </footer>
 
     <script src="/assets/scripts/nav.js"></script>
 
