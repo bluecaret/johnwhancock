@@ -168,14 +168,13 @@ body {
 }
 
 .introTitle {
-  @extend %textGradient;
   font-family: var(--headingFont);
   font-weight: 100;
   font-size: 28.5rem;
   line-height: 1;
   margin: 0;
   text-align: center;
-  div:first-child {
+  .introHello {
     text-align: left;
     font-size: 10rem;
     font-family: var(--bodyFont);
@@ -184,23 +183,30 @@ body {
     color: var(--daySky);
     margin-bottom: .3em;
   }
-  div:last-child {
+  .introName {
+    @extend %textGradient;
+  }
+  .introName div:last-child {
     margin-top: -.235em;
   }
   @media screen and (max-width: 1200px) {
     font-size: max(4rem, 23vw);
     margin-top: 0;
-    div:first-child {
+    .introHello {
       font-size: max(2rem, 7.8vw);
     }
   }
   @media screen and (max-width: 700px) {
     text-align: left;
     font-weight: 400;
-    div:last-child {
+    .introName div:last-child {
       margin-top: -.1em;
     }
   }
+}
+
+.introName {
+
 }
 
 .introDescription {
