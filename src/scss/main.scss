@@ -622,7 +622,7 @@ body {
 _::-webkit-full-page-media, _:future, :root .safari_only {
   .title,
   .postTitle,
-  .introName {
+  .introTitle .introName {
     color: var(--sunRise);
   }
 }
