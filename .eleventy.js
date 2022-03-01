@@ -3,6 +3,7 @@ module.exports = (config) => {
   config.addWatchTarget('./src/portfolio/');
   config.addWatchTarget('./src/thingamajigs/');
 
+  config.addPassthroughCopy('CNAME');
   config.addPassthroughCopy('src/favicon.ico');
   config.addPassthroughCopy('src/assets/static');
   config.addPassthroughCopy('src/assets/images');
