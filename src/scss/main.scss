@@ -148,6 +148,14 @@ body {
       transform: translateY(50%);
     }
   }
+  &:focus {
+    @media (prefers-color-scheme: dark) {
+      outline: 2px solid yellow;
+    }
+    @media (prefers-color-scheme: light) {
+      outline: 2px solid blue;
+    }
+  }
 }
 
 .intro {
@@ -263,6 +271,14 @@ body {
         inset 0 0 0 calc(.3em - 2px) var(--nightSkyDark), 
         inset 0 0 0 .3em var(--sunRise);
     }
+    &:focus {
+      @media (prefers-color-scheme: dark) {
+        outline: 2px solid yellow;
+      }
+      @media (prefers-color-scheme: light) {
+        outline: 2px solid blue;
+      }
+    }
   }
 }
 
@@ -317,6 +333,9 @@ body {
     height: 7rem;
     path {
       fill: var(--vanilla);
+      @media (prefers-color-scheme: light) {
+        fill: var(--nightSkyDark);
+      }
     }
     @media screen and (max-width: 700px) {
       width: 5rem;
@@ -558,6 +577,12 @@ body {
     &:focus {
       outline: none;
       box-shadow: inset 0 -.1em 0 0 var(--daySky), 0 .1em 0 0 var(--daySky);
+      @media (prefers-color-scheme: dark) {
+        outline: 2px solid yellow;
+      }
+      @media (prefers-color-scheme: light) {
+        outline: 2px solid blue;
+      }
     }
   }
 }
