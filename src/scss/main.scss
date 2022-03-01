@@ -9,6 +9,7 @@
   --nightSkyDark: hsl(212, 90%, 7%);
   --nightSkyDarkUltra: hsl(212, 90%, 2%);
   --daySky: rgb(113, 163, 255);
+  --daySkyFaded: hsl(219, 80%, 30%);
   --sunRise: rgb(241, 84, 255);
   --vanilla: hsl(0, 15%, 80%);
 }
@@ -33,6 +34,29 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+  }
+}
+
+%jDoubleBorder {
+  position: relative;
+  padding: 2rem 3rem;
+  margin: 0;
+  transform: rotate(-1deg);
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: transparent 1px solid;
+    border-color: var(--daySky);
+    opacity: 0.3;
+    transform: translate(.3rem, -.3rem);
+    border-radius: 2rem;
+    z-index: -1;
+  }
+  &::after {
+    border-color: var(--sunRise);
+    transform: translate(-.3rem, .3rem);
   }
 }
 
@@ -363,29 +387,9 @@ body {
 }
 
 .jPortfolioHeader {
-  position: relative;
-  z-index: 2;
+  @extend %jDoubleBorder;
   grid-column: 1 / 3;
   grid-row: 1 / 3;
-  padding: 2rem 3rem;
-  margin: 0;
-  transform: rotate(-1deg);
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border: transparent 1px solid;
-    border-color: var(--daySky);
-    opacity: 0.3;
-    transform: translate(.3rem, -.3rem);
-    border-radius: 2rem;
-    z-index: -1;
-  }
-  &::after {
-    border-color: var(--sunRise);
-    transform: translate(-.3rem, .3rem);
-  }
   h3 {
     font-family: var(--headingFont);
     font-size: 3rem;
@@ -475,4 +479,62 @@ body {
       width: 100%;
     }
   }
+}
+
+.jPosts {
+  display: grid;
+  gap: 4rem;
+}
+
+.jPostWrapper {
+  margin: 4rem 0;
+}
+
+.jPost {
+  @extend %jDoubleBorder;
+  padding-bottom: 4rem;
+  transform: rotate(0);
+  &::before {
+    transform: rotate(-.5deg) translate(.3rem, -.3rem);
+  }
+  &::after {
+    transform: rotate(-.5deg) translate(-.3rem, .3rem);
+  }
+  &:nth-child(2n) {
+    &::before {
+      transform: rotate(.5deg) translate(.3rem, -.3rem);
+    }
+    &::after {
+      transform: rotate(.5deg) translate(-.3rem, .3rem);
+    }
+  }
+}
+
+.jPostTitle {
+  @extend .jH1;
+  color: var(--daySky);
+  font-size: 5rem;
+  line-height: 1.3;
+  margin: 1rem 0 1rem;
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+.jPostDescription {
+  @extend .jH2;
+  color: var(--sunRise);
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: left;
+  margin: 0 0 5rem;
+}
+
+.jPostContent p {
+  font-family: var(--bodyFont);
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
 }

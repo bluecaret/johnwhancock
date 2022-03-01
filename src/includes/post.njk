@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="jPostWrapper">
+  <article class="jPost">
+    <header>
+      <h2 class="jPostTitle">
+        {{ title }}
+      </h2>
+      <p class="jPostDescription">{{ description }}</p>
+    </header>
+    <main class="jPostContent">
+      {{ content | safe}}
+      </main>
+  </article>
+</section>
+
+<a href="/thingamajigs" class="jLink">&larr; More Thingamajigs</a>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="{{ htmlClass }}" lang="{{ site.lang }}">
+<html lang="{{ site.lang }}">
   <head>
     <meta charset="utf-8">
     <title>
@@ -20,14 +20,8 @@
     <meta property="og:description" content="{{ description or site.description }}"/>
 
     <link rel="stylesheet" href="/css/main.css">
-
-    {% if css %}
-      {% for link in css %}
-        <link rel="stylesheet" href="{{link}}"/>
-      {% endfor %}
-    {% endif %}
   </head>
-  <body class="{{ bodyClass }}">
+  <body>
     <div class="jNavWrapper">
       <nav class="jNav">
         <?xml version="1.0" encoding="utf-8"?>

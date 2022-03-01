@@ -1,5 +1,7 @@
 module.exports = (config) => {
   config.addWatchTarget('./src/scss/');
+  config.addWatchTarget('./src/portfolio/');
+  config.addWatchTarget('./src/thingamajigs/');
 
   config.addPassthroughCopy({
     'node_modules/simplelightbox/dist/simple-lightbox.min.css':
@@ -13,7 +15,6 @@ module.exports = (config) => {
   config.addPassthroughCopy('src/assets/static');
   config.addPassthroughCopy('src/assets/images');
   config.addPassthroughCopy('src/assets/scripts');
-  config.addPassthroughCopy('src/thingamajigs/**/*.css');
 
   // Developer Language Icons from https://devicon.dev/
   config.addNunjucksShortcode('devIconReact', function () {
