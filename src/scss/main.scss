@@ -159,7 +159,6 @@ body {
 }
 
 .intro {
-  @extend %textGradient;
   margin: 3rem auto 8rem;
   @media screen and (max-width: 1200px) {
     display: flex;
@@ -169,6 +168,7 @@ body {
 }
 
 .introTitle {
+  @extend %textGradient;
   font-family: var(--headingFont);
   font-weight: 100;
   font-size: 28.5rem;
