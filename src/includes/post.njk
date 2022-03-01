@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="postWrapper">
+  <article class="post">
+    <header>
+      <h2 class="postTitle">
+        {{ title }}
+      </h2>
+      <p class="postDescription">{{ description }}</p>
+    </header>
+    <div class="postContent">
+      {{ content | safe}}
+    </div>
+  </article>
+</section>
+
+<a href="/thingamajigs" class="link">&larr; More Thingamajigs</a>

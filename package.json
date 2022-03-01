@@ -1,27 +1,28 @@
 {
   "name": "johnwhancock",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "node-sass --output-style compressed --source-map true scss -o public/css",
-    "watch:css": "npm run build:css && node-sass --watch --output-style compressed --source-map true scss -o public/css",
-    "serve": "live-server --open=public --watch=public",
-    "start": "run-p watch:css serve",
-    "build": "npm run build:css",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d _site",
+    "watch:sass": "sass --watch src/scss:_site/css",
+    "build:sass": "sass --style=compressed src/scss:_site/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "start": "rm -rf _site/ && npm-run-all build:sass --parallel watch:*",
+    "build": "rm -rf _site/ && npm-run-all build:*"
   },
   "keywords": [],
   "author": "John W Hancock",
   "license": "unlicensed",
   "homepage": "https://bluecaret.github.io/johnwhancock",
   "dependencies": {
-    "normalize-scss": "^7.0.1"
+    "@11ty/eleventy": "^1.0.0"
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",
     "live-server": "^1.2.1",
-    "node-sass": "^4.12.0",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.48.0"
   }
 }
