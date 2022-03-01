@@ -27,7 +27,7 @@ body {
   color: var(--vanilla);
 }
 
-%jTextGradient {
+%textGradient {
   color: var(--daySky);
   @supports (background-clip: text) or (-webkit-background-clip: text) {
     background-image: linear-gradient(-45deg, var(--daySky), var(--sunRise));
@@ -37,7 +37,7 @@ body {
   }
 }
 
-%jDoubleBorder {
+%doubleBorder {
   position: relative;
   padding: 2rem 3rem;
   margin: 0;
@@ -60,8 +60,8 @@ body {
   }
 }
 
-.jH1 {
-  @extend %jTextGradient;
+.title {
+  @extend %textGradient;
   font-family: var(--headingFont);
   font-size: 7rem;
   font-weight: 400;
@@ -70,7 +70,7 @@ body {
   }
 }
 
-.jH2 {
+.sectionTitle {
   font-size: 4rem;
   font-family: var(--bodyFont);
   font-weight: 200;
@@ -81,7 +81,7 @@ body {
   }
 }
 
-.jLink {
+.link {
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -120,8 +120,8 @@ body {
   }
 }
 
-.jHeader {
-  @extend %jTextGradient;
+.intro {
+  @extend %textGradient;
   margin: 3rem auto 8rem;
   @media screen and (max-width: 1200px) {
     display: flex;
@@ -130,7 +130,7 @@ body {
   }
 }
 
-.jHeading {
+.introTitle {
   font-family: var(--headingFont);
   font-weight: 100;
   font-size: 28.5rem;
@@ -165,7 +165,7 @@ body {
   }
 }
 
-.jIntro {
+.introDescription {
   font-size: 3.5rem;
   font-weight: 400;
   margin: 0;
@@ -180,83 +180,7 @@ body {
   }
 }
 
-.jNavWrapper {
-  display: flex;
-  justify-content: center;
-  z-index: 3;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: all .3s;
-  margin-top: 5rem;
-  padding: 1rem 0;
-}
-
-.jNav {
-  width: var(--siteWidth);
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  column-gap: 4rem;
-  @media screen and (max-width: 700px) {
-    column-gap: 2.6rem;
-    justify-content: flex-start;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    @media screen and (max-width: 700px) {
-      gap: 1.4rem;
-    }
-  }
-  a {
-    @extend .jLink;
-    font-size: 2.4rem;
-    font-weight: 400;
-    line-height: 1.6;
-    text-transform: lowercase;
-    @media screen and (max-width: 700px) {
-      font-size: 1.8rem;
-    }
-  }
-  svg {
-    width: 7rem;
-    height: 7rem;
-    path {
-      fill: var(--vanilla);
-    }
-    @media screen and (max-width: 700px) {
-      width: 5rem;
-      height: 5rem;
-    }
-  }
-  .jLogoLink {
-    &:hover,
-    &:focus {
-      transform: rotate(-2deg);
-    }
-  }
-}
-
-.jNavSticky {
-  background-color: hsl(212deg 88% 15% / 70%);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px 3px rgb(0 0 0 / 75%);
-}
-
-.jContentWrapper {
-  width: var(--siteWidth);
-  margin: 0 auto;
-}
-
-.jStart {
+.introLinks {
   display: flex;
   flex-wrap: wrap;
   gap: 7rem 4rem;
@@ -312,7 +236,83 @@ body {
   }
 }
 
-.jFooter {
+.navWrapper {
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .3s;
+  margin-top: 5rem;
+  padding: 1rem 0;
+}
+
+.nav {
+  width: var(--siteWidth);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+  @media screen and (max-width: 700px) {
+    column-gap: 2.6rem;
+    justify-content: flex-start;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    @media screen and (max-width: 700px) {
+      gap: 1.4rem;
+    }
+  }
+  a {
+    @extend .link;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-transform: lowercase;
+    @media screen and (max-width: 700px) {
+      font-size: 1.8rem;
+    }
+  }
+  svg {
+    width: 7rem;
+    height: 7rem;
+    path {
+      fill: var(--vanilla);
+    }
+    @media screen and (max-width: 700px) {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  .jLogoLink {
+    &:hover,
+    &:focus {
+      transform: rotate(-2deg);
+    }
+  }
+}
+
+.navSticky {
+  background-color: hsl(212deg 88% 15% / 70%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 3px rgb(0 0 0 / 75%);
+}
+
+.contentWrapper {
+  width: var(--siteWidth);
+  margin: 0 auto;
+}
+
+.footer {
   margin: 8rem 0;
   max-width: 48rem;
   font-family: var(--headingFont);
@@ -330,7 +330,7 @@ body {
   }
 }
 
-.jSkills {
+.skills {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -370,7 +370,7 @@ body {
   }
 }
 
-.jPortfolio {
+.portfolio {
   position: relative;
   display: grid;
   margin: 12rem 0rem;
@@ -386,8 +386,8 @@ body {
   }
 }
 
-.jPortfolioHeader {
-  @extend %jDoubleBorder;
+.portfolioHeader {
+  @extend %doubleBorder;
   grid-column: 1 / 3;
   grid-row: 1 / 3;
   h3 {
@@ -410,7 +410,7 @@ body {
   }
 }
 
-.jPortfolioBody {
+.portfolioBody {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   padding-left: 3rem;
@@ -426,18 +426,18 @@ body {
   }
 }
 
-.jPortfolioLinks {
+.portfolioLinks {
   list-style: none;
   margin: 1rem 0;
   padding: 0;
   display: flex;
   gap: 3rem;
   a {
-    @extend .jLink;
+    @extend .link;
   }
 }
 
-.jPortfolioSkills {
+.portfolioSkills {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -457,7 +457,7 @@ body {
   }
 }
 
-.jPortfolioScreenshot {
+.portfolioScreenshot {
   position: relative;
   z-index: 1;
   grid-column: 2 / 4;
@@ -481,17 +481,17 @@ body {
   }
 }
 
-.jPosts {
+.posts {
   display: grid;
   gap: 4rem;
 }
 
-.jPostWrapper {
+.postWrapper {
   margin: 4rem 0;
 }
 
-.jPost {
-  @extend %jDoubleBorder;
+.post {
+  @extend %doubleBorder;
   padding-bottom: 4rem;
   transform: rotate(0);
   &::before {
@@ -510,8 +510,8 @@ body {
   }
 }
 
-.jPostTitle {
-  @extend .jH1;
+.postTitle {
+  @extend .title;
   color: var(--daySky);
   font-size: 5rem;
   line-height: 1.3;
@@ -523,8 +523,8 @@ body {
   }
 }
 
-.jPostDescription {
-  @extend .jH2;
+.postDescription {
+  @extend .sectionTitle;
   color: var(--sunRise);
   font-size: 2rem;
   font-weight: 400;
@@ -532,7 +532,7 @@ body {
   margin: 0 0 5rem;
 }
 
-.jPostContent p {
+.postContent p {
   font-family: var(--bodyFont);
   font-size: 2rem;
   font-weight: 300;
