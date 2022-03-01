@@ -619,10 +619,11 @@ body {
 }
 
 // Hack for Safari to get around background-clip bug where text is invisible
-_::-webkit-full-page-media, _:future, :root .safari_only {
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance: none) {
   .title,
   .postTitle,
   .introTitle .introName {
     color: var(--sunRise);
   }
-}
+}}
