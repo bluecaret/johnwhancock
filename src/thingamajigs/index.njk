@@ -8,7 +8,7 @@ title: Thingamajigs
 {% set postslist = collections.thingamajigs %}
 
 <section aria-label="List of thingamajigs" class="posts">
-  {%- for post in postslist -%}
+  {%- for post in postslist | reverse -%}
     <article class="post">
       <header>
         <h2 class="postTitle">
