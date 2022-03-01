@@ -149,10 +149,10 @@ body {
     }
   }
   &:focus {
-    @media (prefers-color-scheme: dark) {
+    @media (-ms-high-contrast: white-on-black) {
       outline: 2px solid yellow;
     }
-    @media (prefers-color-scheme: light) {
+    @media (-ms-high-contrast: black-on-white) {
       outline: 2px solid blue;
     }
   }
@@ -272,10 +272,10 @@ body {
         inset 0 0 0 .3em var(--sunRise);
     }
     &:focus {
-      @media (prefers-color-scheme: dark) {
+      @media (-ms-high-contrast: white-on-black) {
         outline: 2px solid yellow;
       }
-      @media (prefers-color-scheme: light) {
+      @media (-ms-high-contrast: black-on-white) {
         outline: 2px solid blue;
       }
     }
@@ -333,7 +333,7 @@ body {
     height: 7rem;
     path {
       fill: var(--vanilla);
-      @media (prefers-color-scheme: light) {
+      @media (-ms-high-contrast: black-on-white) {
         fill: var(--nightSkyDark);
       }
     }
@@ -577,10 +577,10 @@ body {
     &:focus {
       outline: none;
       box-shadow: inset 0 -.1em 0 0 var(--daySky), 0 .1em 0 0 var(--daySky);
-      @media (prefers-color-scheme: dark) {
+      @media (-ms-high-contrast: white-on-black) {
         outline: 2px solid yellow;
       }
-      @media (prefers-color-scheme: light) {
+      @media (-ms-high-contrast: black-on-white) {
         outline: 2px solid blue;
       }
     }
