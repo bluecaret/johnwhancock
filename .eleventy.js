@@ -1,7 +1,7 @@
 module.exports = (config) => {
   config.addWatchTarget('./src/scss/');
   config.addWatchTarget('./src/portfolio/');
-  config.addWatchTarget('./src/thingamajigs/');
+  config.addWatchTarget('./src/code-for-fun/');
 
   config.addPassthroughCopy('CNAME');
   config.addPassthroughCopy('src/favicon.ico');
