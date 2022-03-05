@@ -5,13 +5,13 @@
   --siteWidth: min(85%, 100rem);
   --headingFont: 'Josefin Slab', serif;
   --bodyFont: 'Source Sans Pro', sans-serif;
-  --nightSky: hsl(212, 88%, 10%);
-  --nightSkyDark: hsl(212, 90%, 7%);
-  --nightSkyDarkUltra: hsl(212, 90%, 2%);
-  --daySky: rgb(113, 163, 255);
+  --nightSky: hsl(212, 88%, 17%);
+  --nightSkyDark: hsl(212, 90%, 12%);
+  --nightSkyDarkUltra: hsl(212, 90%, 7%);
+  --daySky: hsl(219, 100%, 76%);
   --daySkyFaded: hsl(219, 80%, 30%);
-  --sunRise: rgb(241, 84, 255);
-  --vanilla: hsl(0, 15%, 80%);
+  --sunRise: hsl(295, 100%, 70%);
+  --vanilla: hsl(0, 15%, 84%);
 }
 
 html {
@@ -79,7 +79,7 @@ body {
     inset: 0;
     border: transparent 1px solid;
     border-color: var(--daySky);
-    opacity: 0.3;
+    opacity: 0.5;
     transform: translate(.3rem, -.3rem);
     border-radius: 2rem;
     z-index: -1;
@@ -353,7 +353,7 @@ body {
 }
 
 .navSticky {
-  background-color: hsl(212deg 88% 15% / 70%);
+  background-color: hsl(212% 88% 20% / 70%);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px 3px rgb(0 0 0 / 75%);
 }
