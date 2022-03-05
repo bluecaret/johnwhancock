@@ -439,6 +439,7 @@ body {
   @media screen and (max-width: 850px) {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    gap: 0;
   }
 }
 
@@ -463,6 +464,11 @@ body {
   @media screen and (max-width: 850px) {
     grid-column: auto;
     grid-row: auto;
+    order: 2;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    margin-top: -3rem;
+    margin-bottom: .5rem;
   }
 }
 
@@ -476,6 +482,7 @@ body {
     text-indent: 2rem;
   }
   @media screen and (max-width: 850px) {
+    order: 3;
     grid-column: auto;
     grid-row: auto;
     padding: 0 3rem;
@@ -529,8 +536,11 @@ body {
     margin-left: auto;
   }
   @media screen and (max-width: 850px) {
+    z-index: -1;
+    order: 1;
     grid-column: auto;
     grid-row: auto;
+    transform: scale(.92);
     .thumb {
       width: 100%;
     }
